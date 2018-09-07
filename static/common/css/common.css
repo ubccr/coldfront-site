@@ -1,0 +1,119 @@
+.fakeimg {
+  height: 77px;
+  background: #E2E2E2;
+}
+
+/*.navbar-custom {
+  background-color: #FFFFFF;
+  font-weight: bold;
+  height: 50px;
+}
+
+.navbar-custom > .navbar-nav > .active {
+  background: #E2E2E2;
+}
+
+*/
+
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 250px;
+}
+
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.navbar-custom {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.navbar-custom .navbar-nav>.active {
+    /*color: #E2E2E2;*/
+    background: #E2E2E2;
+}
+
+.blue-nav-bar-side {
+  background-color: #005bbb;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-bottom: 3px;
+}
+
+
+#ubbanner {
+  border-bottom: 1px solid #FFF;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 250px;
+  background-color: #005bbb;
+  color: #ffffff;
+  padding-top: 15px;
+}
+
+#footer a {
+  color: #ffffff;
+}
+
+#footer-div-main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #FFFFFF;
+}
+
+
+#copyright {
+    padding-top: 10px;
+    color: white;
+}
+
+#copyright>a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+.banner-logo {
+    margin-top: 5px;
+    max-height: 58px !important;
+    margin-bottom: 5px;
+}
+
+
+body > main > form > div.alert.alert-block.alert-danger > ul > li {
+  list-style: none;
+  margin-top: 14px;
+}
+
+body > main > div > div.card.border-primary > div.card-body > form > div.alert.alert-block.alert-danger > ul > li {
+  list-style: none;
+  margin-top: 14px;
+  
+}
+
+
+.btn-primary {
+    background: #005bbb;
+    border-color: #005bbb;
+}

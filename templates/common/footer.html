@@ -1,8 +1,35 @@
-<footer id="footer" class="footer bg-primary customize_footer">
+{% load static %}
+<footer id="footer" class="footer">
   <div class="container">
-    <div class="row justify-content-center">
+    <div id="footer-div-main" class="row">
+      <div class="col-md-4">
+        <a href="http://www.buffalo.edu/">
+          <img style="max-height:32px" src="{% static 'common/images/ub-logo-two-line.png' %}" alt="University at Buffalo, The State University of New York"></a>
+      </div>
+      <div class="col-md-5 ">
+        <div id="address">
+            Center for Computational Research
+            <br> NYS Center of Excellence in Bioinformatics and Life Sciences
+            <br> 701 Ellicott St
+            <br> Buffalo, New York 14203
+        </div>
+        <div class="clearfix"></div>
+        <br>
+        <a style="color:white;text-decoration: underline;" href="https://ubccr.freshdesk.com/">Support Portal & Searchable Knowledgebase <i class="fas fa-external-link-alt"></i></a>
 
-        <p><a href="https://buffalo.edu/ccr">Center for Computational Research</a> | <a href="https://ubccr.freshdesk.com/"><i class="far fa-life-ring" aria-hidden="true"></i> Help</a></p>
+      </div>
+      <div class="col-md-3">
+        Quick Coldfront Links
+        <ul>
+            <li><a href="https://ubccr.freshdesk.com/support/solutions/articles/13000009624-what-is-coldfront" >What is Coldfront?</a></li>
+            <li><a href="https://ubccr.freshdesk.com/support/solutions/articles/13000020759-creating-a-new-project" >Project Setup - New Faculty</a></li>
+            <li><a href="https://ubccr.freshdesk.com/support/solutions/articles/13000010700-managing-projects-in-coldfront-existing-faculty-users" >Managing Projects</a></li>
+            <li><a href="https://ubccr.freshdesk.com/support/solutions/articles/13000010706-yearly-renewal-and-updates" >Yearly Renewal</a></li>
+        </ul>
+      </div>
     </div>
+      <div id="copyright" class="float-right">© 2018 <a href="http://www.buffalo.edu/">University at Buffalo</a>. All rights reserved.  |  <a href="http://www.buffalo.edu/administrative-services/policy1/ub-policy-lib/privacy.html">Privacy</a>  |  <a href="http://www.buffalo.edu/access/about-us/contact-us.html">Accessibility</a></div>
+
   </div>
+
 </footer>
