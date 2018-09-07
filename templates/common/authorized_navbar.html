@@ -1,7 +1,7 @@
  {% include 'common/navbar_brand.html' %}
 
-  <div class="container">
-    <nav class="navbar navbar-expand-md navbar-custom">
+<div class="container">
+  <nav class="navbar navbar-expand-md navbar-custom">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -22,9 +22,7 @@
             <a class="dropdown-item" href="#">Grants</a>
           </div>
         </li>
-        {% if request.user.is_superuser %}
-          {% include 'common/navbar_admin.html' %}
-        {% endif %}
+        {% if request.user.is_superuser %} {% include 'common/navbar_admin.html' %} {% endif %}
         <li id="navbar-help" class="nav-item">
           <a class="nav-link" href="#">Help</a>
         </li>
@@ -33,6 +31,5 @@
         {% include 'common/navbar_login.html' %}
       </ul>
     </div>
-    </nav>
-  </div>
-
+  </nav>
+</div>

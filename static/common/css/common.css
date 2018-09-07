@@ -31,6 +31,23 @@ main {
     padding-bottom: 40px;
 }
 
+nav .navbar-nav li a{
+  color: #005bbb !important;
+  }
+
+.ubcolor li a {
+  color: #005bbb !important;
+}
+
+
+.ubcolor h3 {
+  color: #005bbb !important;
+}
+
+.progress-bar {
+  background-color: #005bbb
+}
+
 .navbar-custom {
     margin-top: 10px;
     padding-bottom: 10px;
@@ -76,7 +93,7 @@ main {
   /* Set the fixed height of the footer here */
   height: 250px;
   background-color: #005bbb;
-  color: #ffffff;
+  color: #ffffff !important;
   padding-top: 15px;
 }
 
