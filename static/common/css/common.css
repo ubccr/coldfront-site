@@ -54,6 +54,14 @@ main {
   padding-bottom: 3px;
 }
 
+.bg-primary {
+  background-color: #005bbb !important;
+}
+
+.border-primary {
+  border-color: #005bbb !important;
+}
+
 
 #ubbanner {
   border-bottom: 1px solid #FFF;
