@@ -1,10 +1,10 @@
 {% load static %}
 <footer id="footer" class="footer">
   <div class="container">
-    <div id="footer-div-main" class="row">
-      <div class="col-md-4">
+    <div id="footer-div-main" class="row" sytle="margin-bottom:5px;">
+      <div class="col-md-4 d-none d-sm-block">
         <a href="http://www.buffalo.edu/">
-          <img style="max-height:32px" src="{% static 'common/images/ub-logo-two-line.png' %}" alt="University at Buffalo, The State University of New York"></a>
+          <img class="img-fluid" src="{% static 'common/images/ub-logo-two-line.png' %}" alt="University at Buffalo, The State University of New York"></a>
       </div>
       <div class="col-md-5 ">
         <div id="address">
@@ -18,7 +18,7 @@
         <a style="color:white;text-decoration: underline;" href="https://ubccr.freshdesk.com/">Support Portal & Searchable Knowledgebase <i class="fas fa-external-link-alt"></i></a>
 
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 d-none d-sm-block">
         Quick Coldfront Links
         <ul>
             <li><a href="https://ubccr.freshdesk.com/support/solutions/articles/13000009624-what-is-coldfront" >What is Coldfront?</a></li>
@@ -28,7 +28,10 @@
         </ul>
       </div>
     </div>
-      <div id="copyright" class="float-right">© 2018 <a href="http://www.buffalo.edu/">University at Buffalo</a>. All rights reserved.  |  <a href="http://www.buffalo.edu/administrative-services/policy1/ub-policy-lib/privacy.html">Privacy</a>  |  <a href="http://www.buffalo.edu/access/about-us/contact-us.html">Accessibility</a></div>
+      <div class="float-right">
+        <div class="d-inline-block" id="copyright">© 2018 <a href="http://www.buffalo.edu/">University at Buffalo</a>. All rights reserved.</div> 
+        <div class="d-inline-block"><div class="d-none d-sm-block">  |  <a href="http://www.buffalo.edu/administrative-services/policy1/ub-policy-lib/privacy.html">Privacy</a>  |  <a href="http://www.buffalo.edu/access/about-us/contact-us.html">Accessibility</a></div></div>
+      </div>
 
   </div>
 
