@@ -1,5 +1,5 @@
- {% include 'common/navbar_brand.html' %}
-
+{% include 'common/navbar_brand.html' %}
+{% load common_tags %} 
 <div class="container">
   <nav class="navbar navbar-expand-md navbar-custom">
     <a class="navbar-brand d-block d-sm-none text-primary" href="#">Coldfront</a>
@@ -23,7 +23,7 @@
         </li>
         {% if request.user.is_superuser %} {% include 'common/navbar_admin.html' %} {% endif %}
         <li id="navbar-help" class="nav-item">
-          <a class="nav-link" href="#">Help</a>
+          <a class="nav-link" href="{% settings_value 'CENTER_HELP_URL' %}">Help</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
