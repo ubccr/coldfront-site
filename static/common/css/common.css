@@ -48,6 +48,15 @@ nav .navbar-nav li a{
   background-color: #005bbb
 }
 
+.page-item.active .page-link {
+    background-color: #005bbb;
+    border-color: #005bbb;
+}
+
+.page-link { 
+    color: #005bbb;
+}
+
 .navbar-custom {
     margin-top: 10px;
     padding-bottom: 10px;
