@@ -21,7 +21,7 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li id="navbar-login" class="nav-item">
-          {% if 'extra.djangoapps.mokey_oidc' in EXTRA_APPS %}
+          {% if 'coldfront.plugins.mokey_oidc' in EXTRA_APPS %}
             <a id="navbar-login" class="nav-link" href="{% url 'oidc_authentication_init' %}"><i class="fas fa-sign-in-alt"></i> Log In</a>
           {% else %}
             <a id="navbar-login" class="nav-link" href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i> Log In</a>
