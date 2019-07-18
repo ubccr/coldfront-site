@@ -1,3 +1,4 @@
+{% load portal_tags %}
 {% load static %}
 <footer id="footer" class="footer">
   <div class="container">
@@ -32,7 +33,9 @@
         <div class="d-inline-block" id="copyright">© 2018 <a href="http://www.buffalo.edu/">University at Buffalo</a>. All rights reserved.</div> 
         <div class="d-inline-block"><div class="d-none d-sm-block">  |  <a href="http://www.buffalo.edu/administrative-services/policy1/ub-policy-lib/privacy.html">Privacy</a>  |  <a href="http://www.buffalo.edu/access/about-us/contact-us.html">Accessibility</a></div></div>
       </div>
-
+    <div>
+         <p>Powered by ColdFront Version {% get_version %} | <a href="https://github.com/ubccr/coldfront"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></p>
+    </div>
   </div>
 
 </footer>
