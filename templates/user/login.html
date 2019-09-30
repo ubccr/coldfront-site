@@ -28,7 +28,7 @@ Log In
     </div>
     <div class="card-body">
         <br>
-        <a class="btn btn-primary btn-block" role="button" href="{% url 'oidc_authentication_init' %}">
+        <a class="btn btn-primary btn-block" role="button" href="{% url 'oidc_authentication_init' %}?next={{request.GET.next}}">
           <i class="fab fa-openid"></i> Log in via OpenID Connect
         </a> 
     </div>
