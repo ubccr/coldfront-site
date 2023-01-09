@@ -19,7 +19,7 @@
           <a class="nav-link" href="{% settings_value 'CENTER_HELP_URL' %}">Help</a>
         </li>
       </ul>
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ms-auto">
         <li id="navbar-login" class="nav-item">
           {% if 'coldfront.plugins.mokey_oidc' in EXTRA_APPS %}
             <a id="navbar-login" class="nav-link" href="{% url 'oidc_authentication_init' %}"><i class="fas fa-sign-in-alt"></i> Log In</a>
