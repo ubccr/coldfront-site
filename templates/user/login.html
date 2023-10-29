@@ -16,7 +16,7 @@ Log In
   {% if form.errors %}
     <div class="alert alert-info alert-dismissible fade show" role="alert">
       {% autoescape off %} {% settings_value 'LOGIN_FAIL_MESSAGE' %} {% endautoescape %}
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
@@ -28,8 +28,8 @@ Log In
     </div>
     <div class="card-body">
         <br>
-        <a class="btn btn-primary btn-block" role="button" href="{% url 'oidc_authentication_init' %}?next={{request.GET.next}}">
-          <i class="fab fa-openid"></i> Log in via OpenID Connect
+        <a class="btn btn-primary btn-block" role="button">
+          <i class="fab fa-openid"></i> Lsog in via OpenID Connect
         </a> 
     </div>
   </div>

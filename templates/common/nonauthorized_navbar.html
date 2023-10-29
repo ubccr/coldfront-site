@@ -3,31 +3,33 @@
 
 <div class="container">
   <nav class="navbar navbar-expand-md navbar-custom">
-    <a class="navbar-brand d-block d-sm-none text-primary" href="#">Coldfront</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main">
-      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-    </button>
-    <div class="navbar-collapse collapse" id="navbar-main">
-      <ul class="navbar-nav">
-        <li id="navbar-home" class="nav-item active">
-          <a id="navbar-home" class="nav-link" href="/">Home</a>
-        </li>
-        <li id="navbar-center-summary" class="nav-item">
-          <a class="nav-link" href="{% url 'center-summary' %}">Center Summary</a>
-        </li>
-        <li id="navbar-help" class="nav-item">
-          <a class="nav-link" href="{% settings_value 'CENTER_HELP_URL' %}">Help</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li id="navbar-login" class="nav-item">
-          {% if 'coldfront.plugins.mokey_oidc' in EXTRA_APPS %}
-            <a id="navbar-login" class="nav-link" href="{% url 'oidc_authentication_init' %}"><i class="fas fa-sign-in-alt"></i> Log In</a>
-          {% else %}
-            <a id="navbar-login" class="nav-link" href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i> Log In</a>
-          {% endif %}
-        </li>
-      </ul>
+    <div class="container">
+      <a class="navbar-brand d-block d-sm-none text-primary" href="#">Coldfront</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="navbar-nav">
+          <li id="navbar-home" class="nav-item active">
+            <a id="navbar-home" class="nav-link" href="/">Home</a>
+          </li>
+          <li id="navbar-center-summary" class="nav-item">
+            <a class="nav-link" href="{% url 'center-summary' %}">Center Summary</a>
+          </li>
+          <li id="navbar-help" class="nav-item">
+            <a class="nav-link" href="{% settings_value 'CENTER_HELP_URL' %}">Help</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li id="navbar-login" class="nav-item">
+            {% if 'coldfront.plugins.mokey_oidc' in EXTRA_APPS %}
+              <a id="navbar-login" class="nav-link" href="{% url 'oidc_authentication_init' %}"><i class="fas fa-sign-in-alt"></i> Log In</a>
+            {% else %}
+              <a id="navbar-login" class="nav-link" href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i> Log In</a>
+            {% endif %}
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </div>

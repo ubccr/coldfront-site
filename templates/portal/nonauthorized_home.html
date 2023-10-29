@@ -6,18 +6,18 @@
 
 
 <div class="row" style="margin-top:25px">
-    <div class="col mr-5">
+    <div class="col me-5">
         <h3 class="text-center">Log In to Coldfront</h3>
         <hr>
-        {% if 'coldfront.plugins.mokey_oidc' in EXTRA_APPS %}
+        {% comment %} {% if 'coldfront.plugins.mokey_oidc' in EXTRA_APPS %}
         <p><a class="btn btn-primary btn-block" href="{% url 'oidc_authentication_init' %}" role="button"><i class="fas fa-sign-in-alt"></i> Log In</a></p>
-        {% else %}
+        {% else %} {% endcomment %}
         <p><a class="btn btn-primary btn-block" href="{% url 'login' %}" role="button"><i class="fas fa-sign-in-alt"></i> Log In</a></p>
-        {% endif %}
+        {% comment %} {% endif %} {% endcomment %}
         <div class="card bg-light">
             <div class="card-body">
                 <h5 class="card-title">Do not have an Account?</h5>
-                <p class="card-text" style="text-align: justify;text-justify: inter-word;">{% settings_value 'ACCOUNT_CREATION_TEXT' %}</p>
+                <p class="card-text">{% settings_value 'ACCOUNT_CREATION_TEXT' %}</p>
             </div>
         </div>
     </div>
